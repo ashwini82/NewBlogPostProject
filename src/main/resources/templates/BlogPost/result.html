@@ -28,8 +28,12 @@
 		<div class="row">
 			<div class="col-md">
 				<a href="/">
-					<button id="btt" class="btn btn-primary">Return Home</button>
+					<button  class="btn btn-primary">Return Home</button>
 				</a>
+				<a href="#" th:href="@{/blogposts/{id}(id=${blogPost.id})}">
+                    <button class="btn btn-light">Edit this Post</button>
+                </a>
+				
 				<a href="/blogposts/new">
 					<button id="search" class="btn btn-secondary">Create Another Blog Post</button>
 				</a>
